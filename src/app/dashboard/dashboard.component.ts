@@ -3,12 +3,13 @@ import { Hero } from '../hero';
 import { HeroService } from '../hero.service';
 import { NgFor } from '@angular/common';
 import { RouterLink } from '@angular/router';
+import { HeroSearchComponent } from '../hero-search/hero-search.component';
 
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css'],
-  imports: [NgFor, RouterLink],
+  imports: [NgFor, RouterLink, HeroSearchComponent],
 })
 export class DashboardComponent implements OnInit {
   heroes: Hero[] = [];
